@@ -1,38 +1,43 @@
 //
-//  ISAdMobAdapter.h
-//  ISAdMobAdapter
+//  ISPangleAdapter.h
+//  ISPangleAdapter
 //
 //  Copyright © 2023 ironSource Mobile Ltd. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <IronSource/ISBaseAdapter+Internal.h>
-#import <GoogleMobileAds/GoogleMobileAds.h>
 
-static NSString * const AdMobAdapterVersion = @"4.3.58";
+static NSString * const PangleAdapterVersion = @"4.3.38";
 static NSString * Githash = @"";
 
-//System Frameworks For AdMob Adapter
-
+// System Frameworks For Pangle Adapter
+@import Accelerate;
 @import AdSupport;
+@import AppTrackingTransparency;
 @import AudioToolbox;
 @import AVFoundation;
-@import CFNetwork;
 @import CoreGraphics;
+@import CoreImage;
+@import CoreLocation;
 @import CoreMedia;
+@import CoreML;
+@import CoreMotion;
 @import CoreTelephony;
-@import CoreVideo;
+@import CoreText;
+@import ImageIO;
 @import JavaScriptCore;
+@import MapKit;
 @import MediaPlayer;
-@import MessageUI;
 @import MobileCoreServices;
 @import QuartzCore;
-@import SafariServices;
 @import Security;
 @import StoreKit;
 @import SystemConfiguration;
+@import UIKit;
 @import WebKit;
 
-@interface ISAdMobAdapter : ISBaseAdapter
+
+@interface ISPangleAdapter : ISBaseAdapter
 
 @end

@@ -1,38 +1,36 @@
 //
-//  ISAdMobAdapter.h
-//  ISAdMobAdapter
+//  ISFacebookAdapter.h
+//  ISFacebookAdapter
 //
 //  Copyright © 2023 ironSource Mobile Ltd. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <IronSource/ISBaseAdapter+Internal.h>
-#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <IronSource/IronSource.h>
 
-static NSString * const AdMobAdapterVersion = @"4.3.58";
+static NSString * const FacebookAdapterVersion = @"4.3.47";
 static NSString * Githash = @"";
 
-//System Frameworks For AdMob Adapter
-
+//System Frameworks For Facebook Adapter
 @import AdSupport;
 @import AudioToolbox;
 @import AVFoundation;
 @import CFNetwork;
 @import CoreGraphics;
+@import CoreImage;
 @import CoreMedia;
+@import CoreMotion;
 @import CoreTelephony;
-@import CoreVideo;
-@import JavaScriptCore;
-@import MediaPlayer;
-@import MessageUI;
-@import MobileCoreServices;
-@import QuartzCore;
+@import LocalAuthentication;
 @import SafariServices;
 @import Security;
 @import StoreKit;
 @import SystemConfiguration;
+@import UIKit;
+@import VideoToolbox;
 @import WebKit;
 
-@interface ISAdMobAdapter : ISBaseAdapter
+@interface ISFacebookAdapter : ISBaseAdapter
 
 @end
