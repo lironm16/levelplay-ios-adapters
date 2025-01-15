@@ -1,6 +1,38 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-}
+//
+//  ISAdMobAdapter.h
+//  ISAdMobAdapter
+//
+//  Copyright © 2023 ironSource Mobile Ltd. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <IronSource/ISBaseAdapter+Internal.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
+
+static NSString * const AdMobAdapterVersion = @"4.3.58";
+static NSString * Githash = @"";
+
+//System Frameworks For AdMob Adapter
+
+@import AdSupport;
+@import AudioToolbox;
+@import AVFoundation;
+@import CFNetwork;
+@import CoreGraphics;
+@import CoreMedia;
+@import CoreTelephony;
+@import CoreVideo;
+@import JavaScriptCore;
+@import MediaPlayer;
+@import MessageUI;
+@import MobileCoreServices;
+@import QuartzCore;
+@import SafariServices;
+@import Security;
+@import StoreKit;
+@import SystemConfiguration;
+@import WebKit;
+
+@interface ISAdMobAdapter : ISBaseAdapter
+
+@end
