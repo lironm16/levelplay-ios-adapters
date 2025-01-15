@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:ironsource-mobile/levelplay-ios-adapters.git
+	branch = master
+	commit = 2f69c72d8ea7c66370dc1dd68163c7c499b4cc78
+	parent = 1e7096817e781bb4aaf6e108792a9eafe0955a34
+	method = merge
+	cmdver = 0.4.9
