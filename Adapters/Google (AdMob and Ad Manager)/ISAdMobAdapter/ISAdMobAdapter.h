@@ -9,8 +9,8 @@
 #import <IronSource/ISBaseAdapter+Internal.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
-static NSString * const AdMobAdapterVersion = @"4.3.58";
-static NSString * Githash = @"";
+static NSString * const AdMobAdapterVersion = @"4.3.60";
+static NSString * Githash = @"7ec9e3c8b";
 
 //System Frameworks For AdMob Adapter
 
