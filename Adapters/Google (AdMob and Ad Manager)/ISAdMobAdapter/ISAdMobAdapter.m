@@ -11,7 +11,7 @@
 #import "ISAdMobBannerAdapter.h"
 #import "ISAdMobConstants.h"
 #import "ISAdMobNativeAdAdapter.h"
-
+//test
 // Handle init callback for all adapter instances
 static ISConcurrentMutableSet<ISNetworkInitCallbackProtocol> *initCallbackDelegates = nil;
 static InitState initState = INIT_STATE_NONE;
