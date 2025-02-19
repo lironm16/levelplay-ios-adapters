@@ -5,7 +5,7 @@
 //  Copyright © 2023 ironSource Mobile Ltd. All rights reserved.
 //
 
-#include "ISAdMobInterstitialDelegate.h"
+#import "ISAdMobInterstitialDelegate.h"
 
 @implementation ISAdMobInterstitialDelegate
 
@@ -43,7 +43,7 @@
 
 - (void)adDidFailToLoadWithError:(NSError *)error {
     LogAdapterDelegate_Internal(@"adUnitId = %@ with error = %@", self.adUnitId, error);
-    NSError *smashError = (error.code == GADErrorNoFill || error.code == GADErrorMediationNoFill) ? [ISError createError:ERROR_IS_LOAD_NO_FILL
+    NSError *smashError = (error.code == GADErrorNoFill) ? [ISError createError:ERROR_IS_LOAD_NO_FILL
                                                                                                              withMessage:@"AdMob no fill"] : error;
     
     [self.adapter onAdUnitAvailabilityChangeWithAdUnitId:self.adUnitId

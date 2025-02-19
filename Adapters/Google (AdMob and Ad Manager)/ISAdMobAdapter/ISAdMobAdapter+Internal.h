@@ -1,6 +1,6 @@
 #import "ISAdMobAdapter.h"
 #import "ISAdMobConstants.h"
-//test
+
 @interface ISAdMobAdapter ()
 
 - (void)initAdMobSDKWithAdapterConfig:(ISAdapterConfig *)adapterConfig;

@@ -4,12 +4,12 @@
 //
 //  Copyright © 2023 ironSource Mobile Ltd. All rights reserved.
 //
-//test
+
 #import <Foundation/Foundation.h>
 #import <IronSource/ISBaseAdapter+Internal.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
-static NSString * const AdMobAdapterVersion = @"4.3.60";
+static NSString * const AdMobAdapterVersion = @"4.3.61";
 static NSString * Githash = @"";
 
 //System Frameworks For AdMob Adapter
