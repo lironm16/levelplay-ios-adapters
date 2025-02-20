@@ -10,7 +10,7 @@
 #import <ISBidMachineRewardedVideoDelegate.h>
 #import <ISBidMachineInterstitialDelegate.h>
 #import <ISBidMachineBannerDelegate.h>
-#import <BidMachine/BidMachine.h>
+#import <BidMachine/BidMachine-Swift.h>
 
 // Handle init callback for all adapter instances
 static InitState initState = INIT_STATE_NONE;
@@ -358,8 +358,8 @@ static ISConcurrentMutableSet<ISNetworkInitCallbackProtocol> *initCallbackDelega
 }
 
 - (void)collectInterstitialBiddingDataWithAdapterConfig:(ISAdapterConfig *)adapterConfig
-                                                      adData:(NSDictionary *)adData
-                                                    delegate:(id<ISBiddingDataDelegate>)delegate {
+                                                 adData:(NSDictionary *)adData
+                                               delegate:(id<ISBiddingDataDelegate>)delegate {
     [self collectBiddingDataWithAdData:adData
                               adFormat:BidMachinePlacementFormatInterstitial
                               delegate:delegate];
