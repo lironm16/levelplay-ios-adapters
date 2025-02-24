@@ -204,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68C9588E20E443A58B5EC7C9 /* Build configuration list for PBXNativeTarget "ISAdMobAdapter" */;
 			buildPhases = (
+				3100EB97A32A820D1420A75E /* Create XCFramework */,
 				62E3268AD4893B1CCC3160B6 /* Headers */,
 				3B4BA51E4AC6A88D0EBAF7C3 /* Sources */,
 				636A9FAC0FB143A7FA84C69D /* Resources */,
@@ -262,6 +263,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3100EB97A32A820D1420A75E /* Create XCFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create XCFramework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "chmod +x BuildScript/add_Git_Hash.sh\nBuildScript/add_Git_Hash.sh\nBuildScript/build_XCFramework.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B4BA51E4AC6A88D0EBAF7C3 /* Sources */ = {
